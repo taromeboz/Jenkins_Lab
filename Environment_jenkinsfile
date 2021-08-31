@@ -1,0 +1,17 @@
+pipeline {
+ 
+    agent any
+ 
+    stages {
+ 
+        stage('Init'){
+            steps {
+                echo 'Init'
+                echo '******************************'  
+                echo "build number : ${env.BUILD_NUMBER}"
+            }
+        }
+ 
+        ...
+    }    
+}
